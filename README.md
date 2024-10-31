@@ -1,4 +1,4 @@
-# Proyecto - Java con Pruebas para Autograding
+# Proyecto - Polimorfismo
 
 Plantilla básica para proyecto de Java con Autograding
 
@@ -9,14 +9,35 @@ Plantilla básica para proyecto de Java con Autograding
 title: Clase
 ---
 classDiagram
-      class Clase
-      Clase: -x
-      Clase: -y
-      Clase: +op1()
-      Clase: +op2()
-      Clase: +op3()
-      Clase: +op4()
+      class Animal {
+        <<abstract>>
+        -String name
+        +Animal(String name)
+        +void makeSound()
+        +void move()
+    }
+
+    class Dog {
+        +Dog(String name)
+        +void makeSound()
+        +void move()
+    }
+
+    class Cat {
+        +Cat(String name)
+        +void makeSound()
+        +void move()
+    }
+
+    Animal <|-- Dog
+    Animal <|-- Cat
+
+
+
 ```
+
+```mermaid
+
 [Referencia-Mermaid](https://mermaid.js.org/syntax/classDiagram.html)
 
 ## Diagrama de clases UML con draw.io
