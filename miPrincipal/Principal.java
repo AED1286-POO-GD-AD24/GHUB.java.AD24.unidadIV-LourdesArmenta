@@ -46,6 +46,33 @@ public class Principal {
         ciudad.setHabitantes(350000);
         System.out.println(ciudad.getNombre());
         System.out.println(ciudad.getHabitantes());
+
+        //utilizar la clase abstracta
+        Tarifa [] prt = new Tarifa[100];
+        //crear aleatoriamente objetos de las subclases correspondientes
+        for(int i=0;i<100;i++){
+            if(i%5==0)
+               prt[i]= new GranClase();
+            else if(i%3 == 0)
+               prt[i]= new Preferente();
+            else
+               prt[i]= new Turista();
+
+        }
+        for(int i=0;i<100;i++){
+            prt[i].calcularCosto();
+        }
+
+        Triangulo t1 = new Triangulo();
+        t1.setAltura(4);
+        t1.setBase(2);
+        System.out.println(t1.calcularArea());
+        t1.calcularArea();
+        Circulo c1 = new Circulo();
+        c1.setRadio(5);
+        System.out.println(c1.calcularArea());
+        c1.dibular();
+
         
 
 
