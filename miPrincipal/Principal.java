@@ -1,6 +1,13 @@
 package miPrincipal;
 import animales.*;
 import clasesAbstractas.*;
+import clasesAbstractas.Animal;
+import clasesAbstractas.Perro;
+import interfases.Vehiculo;
+import interfases.Coche;
+import interfases.Motocicleta;
+import interfases.Camion;
+
 
 public class Principal {
     
@@ -41,6 +48,7 @@ public class Principal {
         */
 
         //Localidad localidad = new Localidad(); //no sepuede instanciar una clase abstracta
+        /*
         Ciudad ciudad = new Ciudad();
         ciudad.setNombre("Los Mochis");
         ciudad.setHabitantes(350000);
@@ -72,6 +80,42 @@ public class Principal {
         c1.setRadio(5);
         System.out.println(c1.calcularArea());
         c1.dibular();
+        */
+        /* 
+        Perro perro = new Perro("Firulais");
+        System.out.println(perro.getNombre());
+        perro.hacerSonido();
+        perro.dormir();
+
+        //Ejemplo de variable polimorfica
+        Animal miAnimal;
+        miAnimal = new Perro("Coco");
+        miAnimal.hacerSonido(); //imprimu gua gua
+
+        miAnimal = new Gato("Panu");
+        miAnimal.hacerSonido(); //miprimr miau miau 
+        */
+        Vehiculo coche = new Coche("AEB343");
+        Vehiculo moto = new Motocicleta("CSGD6432");
+        Vehiculo camion = new Camion("SSS32233");
+
+        coche.encenderMotor();
+        coche.apagarMotor();
+        coche.conducir();
+
+        moto.encenderMotor();
+        moto.apagarMotor();
+        moto.conducir();
+
+        camion.encenderMotor();
+        camion.apagarMotor();
+        camion.conducir();
+
+
+
+
+
+
 
         
 
