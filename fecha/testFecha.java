@@ -17,6 +17,12 @@ public class testFecha {
         //imprimimos la fecha
         System.out.println(f);
 
+        Fecha fecha2=new Fecha(5,11,2024);
+        System.out.println(fecha2);
+
+        Fecha fecha3=new Fecha("05/11/2024");
+
+
 
 
 

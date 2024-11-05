@@ -15,6 +15,10 @@ public class Fecha {
         this.anio = anio;
     }
 
+    public Fecha(String cadena){
+        //pendiente
+    }
+
     public int getDia() {
         return dia;
     }
