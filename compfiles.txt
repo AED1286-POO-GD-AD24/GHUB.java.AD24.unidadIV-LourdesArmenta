@@ -1,3 +1,11 @@
+./fecha/Fecha.java
+./fecha/testFecha.java
+./genericidad/Persona.java
+./genericidad/testCaja.java
+./genericidad/Caja.java
+./genericidad/testTerna.java
+./genericidad/Ejemplar.java
+./genericidad/Terna.java
 ./interfases/Gato.java
 ./interfases/Mascota.java
 ./interfases/Animal.java
