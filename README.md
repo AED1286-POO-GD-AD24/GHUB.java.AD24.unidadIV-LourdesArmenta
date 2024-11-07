@@ -31,12 +31,54 @@ classDiagram
 
     Animal <|-- Dog
     Animal <|-- Cat
+```
+```mermaid
+---
+title: Clase
+---
+classDiagram
+    class Throwable {
+        <<abstract>>
+        +String message
+        +Throwable(String message)
+        +String getMessage()
+        +void printStackTrace()
+    }
 
+    class Error {
+        +Error(String message)
+    }
 
+    class Exception {
+        +Exception(String message)
+    }
+
+    Throwable <|-- Error
+    Throwable <|-- Exception
+
+    class OutOfMemoryError {
+        +OutOfMemoryError(String message)
+    }
+
+    class StackOverflowError {
+        +StackOverflowError(String message)
+    }
+
+    Error <|-- OutOfMemoryError
+    Error <|-- StackOverflowError
+
+    class IOException {
+        +IOException(String message)
+    }
+
+    class NullPointerException {
+        +NullPointerException(String message)
+    }
+
+    Exception <|-- IOException
+    Exception <|-- NullPointerException
 
 ```
-
-```mermaid
 
 [Referencia-Mermaid](https://mermaid.js.org/syntax/classDiagram.html)
 

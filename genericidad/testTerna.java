@@ -48,8 +48,13 @@ public class testTerna {
 
 
 
+       
         @SuppressWarnings("unchecked")
-        Terna<String>[] lista = (Terna<String>[]) new Terna[20];
+        Terna<String> [] lista =  (Terna<String> []) new Terna[20];
+        
+        System.out.println(lista[0]);
+        System.out.println(lista[1]);
+        System.out.println(lista[19]);
 
 
 

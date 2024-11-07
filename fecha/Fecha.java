@@ -16,7 +16,24 @@ public class Fecha {
     }
 
     public Fecha(String cadena){
-        //pendiente
+        //buscamos la primera ocurrencia de '/'
+        int pos1=cadena.indexOf('/');
+
+        //buscamos la ultima ocurrencia de '/'
+        int pos2 = cadena.lastIndexOf('/');
+
+        //procesamos el dia
+        String sDia = cadena.substring(0, pos1);
+        dia =Integer.parseInt(sDia);
+
+        //procesmos del mes
+        String sMes = cadena.substring(pos1+1,pos2);
+        mes = Integer.parseInt(sMes);
+
+        //procesamos el año
+        String sAnio = cadena.substring(pos2+1);
+        anio = Integer.parseInt(sAnio);
+
     }
 
     public int getDia() {
@@ -48,6 +65,21 @@ public class Fecha {
        
         return dia+"/"+mes+"/"+anio;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        //convertir el objeto obj de tipo Object a un objeto fecha
+        Fecha otra = (Fecha) obj;
+        if((this.dia == otra.dia ) &&(this.mes == otra.mes) && (this.anio == otra.anio))
+           return true;
+        else
+           return false;
+           
+
+        
+    }
+
+    
 
     
     
