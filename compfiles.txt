@@ -1,5 +1,13 @@
+./variablesInstancia/Persona.java
 ./fecha/Fecha.java
-./fecha/testFecha.java
+./fecha/MuestraConjunto.java
+./fecha/testMuestraConjunto.java
+./fecha/TestFechaDetallada.java
+./fecha/FechaHora.java
+./fecha/testPolimorfismo.java
+./fecha/TestFecha.java
+./fecha/TestFechaHora.java
+./fecha/FechaDetallada.java
 ./genericidad/Persona.java
 ./genericidad/testCaja.java
 ./genericidad/Caja.java

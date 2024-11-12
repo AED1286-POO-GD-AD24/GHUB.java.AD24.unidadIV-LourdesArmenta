@@ -16,6 +16,7 @@ public class FechaDetallada extends Fecha {
     
     
     public FechaDetallada(){
+        this(0,0,0); //INVOCAMOS AL CONSTRUCTOR DE TRES INT PASANDO CEROS
 
     }
 

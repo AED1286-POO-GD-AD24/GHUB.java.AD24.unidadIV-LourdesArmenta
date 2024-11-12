@@ -1,6 +1,6 @@
 package fecha;
 
-public class testFecha {
+public class TestFecha {
     public static void main(String[] args) {
         Fecha f = new Fecha();
         f.setDia(2);
