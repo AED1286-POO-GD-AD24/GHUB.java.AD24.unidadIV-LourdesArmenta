@@ -7,7 +7,7 @@ public class Persona {
     private String dni; //atributo
     private Fecha fechaNacimiento; //atributo
 
-    private int cont = 0; //variable de instancia
+    private  int cont = 0; //variable de instancia
 
     public Persona(String nombre, String dni, Fecha fechaNacimiento) {
         this.nombre = nombre;

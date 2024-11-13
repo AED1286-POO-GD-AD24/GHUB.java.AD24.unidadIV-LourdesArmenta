@@ -13,9 +13,15 @@ public class TestPersona {
                                  ,new FechaDetallada(12,6,1968));
 
         System.out.println(p1);
-        System.err.println(p1);
         System.out.println(p1);
-
+        System.out.println(p1);
+        System.out.println("---");
+        System.out.println(p2);
+        System.out.println(p2);
+        System.out.println("---");
+        System.out.println(p1);
+        System.out.println(p1);
+       
 
 
     }
